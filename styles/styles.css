@@ -2,6 +2,7 @@
 :root {
   --dark: #0d0d2b;
   --white: #ffff;
+  --white-rgb: 255, 255, 255;
   --blue: #3671e9;
   --purple: #2b076e;
 }
@@ -12,15 +13,14 @@ body {
 }
 /*HEADER*/
 .header {
-  max-width: 1202px;
-  padding-right: 15px;
-  padding-left: 15px;
-  margin: 0 auto;
+  max-width: 1200px;
+  max-height: 50px;
+  margin: 60px auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 60px;
 }
+
 .nav {
   display: flex;
   align-items: center;
@@ -43,7 +43,7 @@ body {
 .nav-item-login {
   margin-left: 56px;
   padding-right: 24px;
-  border-right: 1px solid rgba(242, 242, 242, 0.3);
+  border-right: 1px solid rgba(242, 242, 242, 0.3)
 }
 .nav-item-register {
   margin-left: 24px;
@@ -68,3 +68,68 @@ body {
 .nav-link-register:hover {
   background-color: var(--purple);
 }
+/*MAIN*/
+.wrapper {
+  max-width: 1200px;
+  max-height: 465px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 86px;
+}
+.main {
+  display: flex;
+  align-items: center;
+  margin-top: -10px;
+}
+.main-text {
+  flex: 0 0 600px;
+  
+}
+.main-text-sale {
+  background-color: rgba(var(--white-rgb), 0.1);
+  display: inline-block;
+  padding: 8px 12px 8px 4px;
+  border-radius: 32px;
+  margin-bottom: 25px;
+}
+.main-text-sale span {
+  background-color: var(--white);
+  color: var(--dark);
+  padding: 4px 16px;
+  border-radius: 32px;
+  margin-right: 16px;
+  margin-bottom: 25px;
+}
+.main-text-title {
+  font-size: 64px;
+  font-weight: 700;
+    margin-bottom: 25px;
+}
+.main-text-description {
+  font-size: 16px;
+  color: #e0e0e0;
+  line-height: 1.5;
+margin-right: 164px;
+  margin-bottom: 25px;
+}
+.main-img {
+  flex-grow: 1;
+}
+.main-img-image {
+  width: 100%;
+}
+.main-text-link {
+  background-color: var(--blue);
+  color: var(--white);
+  padding: 14px 32px;
+  border-radius: 32px;
+  font-weight: 500;
+  font-size: 16px;
+  text-decoration: none;
+  transition: 0.2s ease background-color;
+  
+}
+.main-text-link:hover {
+  background-color: var(--purple);
