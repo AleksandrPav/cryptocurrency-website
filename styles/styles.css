@@ -259,6 +259,7 @@ body {
 .page-light {
   background-color: #e0e0e0;
   color: var(--dark);
+  height: 1033px;
 }
 .calc-foot {
   max-width: 900px;
@@ -385,4 +386,62 @@ body {
 .crypto-item:hover .crypto-item-btn-icon {
   border: 2px solid var(--white);
   transform: scale(0.5);
+}
+/*page-gradienet*/
+.page-gradienet {
+  background-color: linear-gradient(180deg, var(--purple) 0%, var(--dark) 100%);
+  padding-bottom: 30px;
+}
+.form-tex-title {
+  margin-top: 0;
+  font-size: 32px;
+  font-weight: 700;
+  color: #ffffff;
+}
+.form {
+  background-color: var(--blue);
+  border-radius: 16px;
+  display: flex;
+  justify-content: space-between;
+  padding: 48px 48px;
+}
+.form-text {
+  flex-grow: 1;
+}
+.form-tex-description {
+  font-size: 16px;
+  font-weight: 400;
+  color: #ffffff;
+  margin-bottom: 0;
+  max-width: 348px;
+  line-height: 1.5;
+}
+.form-letter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex: 0 0 566px;
+  width: 100%;
+  margin-right: 40px;
+}
+.form-letter-input {
+  font-size: 16px;
+  border: none;
+  border-bottom: 1px solid var(--white);
+  background-color: transparent;
+  color: var(--white);
+  width: 100%;
+  margin-right: 40px;
+}
+.form-letter-input::placeholder {
+  color: var(--white);
+}
+.form-letter-btn {
+  border: none;
+  background-color: var(--white);
+  color: var(--dark);
+  font-size: 18px;
+  font-weight: 500;
+  padding: 14px 32px 14px 32px;
+  border-radius: 32px;
 }
